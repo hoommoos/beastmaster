@@ -252,7 +252,6 @@ if __name__ == "__main__":
     if parser.parse_args().destroy:
         destroy()
 
-
     print('\n---')
     print('Script has finished.')
     print('Exited.')
