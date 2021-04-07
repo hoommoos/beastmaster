@@ -248,10 +248,10 @@ if __name__ == "__main__":
         update()
     if parser.parse_args().run:
         run_instances()
+        clean_privacy()
     if parser.parse_args().destroy:
         destroy()
 
-    clean_privacy()
 
     print('\n---')
     print('Script has finished.')
