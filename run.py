@@ -92,7 +92,7 @@ class InstanceRunner:
             "docker run -d --name {0}"
             " -e TIDAL_LOGIN={1} -e TIDAL_PASSWORD={2}"
             " -e INSTANCE_NAME={0} -e INSTANCE_PORT={3}"
-            " --restart=always"
+            " --restart always"
             " -p {3}:80"
             " -v /dev/shm:/dev/shm tidal-bot -h {0} -l {4}".format(
                 instance_name, login, password, random_port, instance_addr
